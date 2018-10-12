@@ -1,0 +1,19 @@
+
+<idea-plugin>
+    <name>NetworkRepl</name>
+    <description>Yes</description>
+    <version>1.0</version>
+
+    <actions>
+        <action id="SendCode"
+                class="networkrepl.actions.SendCodeToRepl"
+                text="Send selected code"
+                description="IntelliJ Action System Demo">
+            <keyboard-shortcut first-keystroke="control alt y" keymap="$default"/>
+        </action>
+    </actions>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <projectService serviceInterface="Mypackage.MyProjectService" serviceImplementation="Mypackage.MyProjectServiceImpl" />
+    </extensions>
+</idea-plugin>
